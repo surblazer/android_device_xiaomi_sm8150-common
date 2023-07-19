@@ -38,6 +38,10 @@ printf "\n%s\n" "ifeq (\$(BOARD_HAVE_IR),true)" >> "${PRODUCTMK}"
 write_makefiles "${MY_DIR}/proprietary-files-ir.txt" true
 echo "endif" >> "${PRODUCTMK}"
 
+printf "\n%s\n" "ifeq (\$(BOARD_HAVE_GNSS),true)" >> "${PRODUCTMK}"
+write_makefiles "${MY_DIR}/proprietary-files-gnss.txt" true
+echo "endif" >> "${PRODUCTMK}"
+
 # Finish
 write_footers
 
