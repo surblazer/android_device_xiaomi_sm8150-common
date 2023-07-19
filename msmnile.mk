@@ -188,10 +188,12 @@ PRODUCT_PACKAGES += \
 endif
 
 # FM
+ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
+endif
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
