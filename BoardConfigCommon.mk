@@ -63,6 +63,8 @@ endif
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
+BOARD_HAVE_FP ?= true
+
 ifeq ($(TARGET_HAS_UDFPS),true)
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 endif
