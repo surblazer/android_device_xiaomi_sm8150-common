@@ -1,0 +1,2 @@
+# Consumer IR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msmnile.so
