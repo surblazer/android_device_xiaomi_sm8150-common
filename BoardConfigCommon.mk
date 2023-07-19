@@ -75,6 +75,9 @@ endif
 # FM
 BOARD_HAVE_QCOM_FM ?= true
 
+# GPS
+BOARD_HAVE_GNSS ?= true
+
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_msmnile
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_msmnile
