@@ -181,6 +181,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # RIL
+BOARD_HAVE_RIL ?= true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Rootdir
@@ -230,6 +231,9 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_fm.xml
 endif
 ifeq ($(BOARD_HAVE_IR),true)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_ir.xml
+endif
+ifeq ($(BOARD_HAVE_RIL),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_radio.xml
 endif
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
