@@ -258,6 +258,9 @@ ifeq ($(TARGET_IS_VAB),true)
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 endif
 
+# Vibrator
+BOARD_HAVE_VIBRATOR ?= true
+
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
