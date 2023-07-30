@@ -479,8 +479,10 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
+ifeq ($(BOARD_HAVE_VIBRATOR),true)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
+endif
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
