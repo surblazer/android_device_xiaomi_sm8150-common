@@ -485,7 +485,9 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
+ifeq ($(BOARD_HAVE_VIBRATOR),true)
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+endif
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
