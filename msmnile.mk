@@ -82,6 +82,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
+# Accessories
+PRODUCT_PACKAGES += \
+    vendor.lineage.accessories-service.xiaomi
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
